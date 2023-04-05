@@ -1,4 +1,4 @@
-.register {
+.login {
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -20,16 +20,6 @@
     .logo {
       height: 100px;
     }
-    .loginButton {
-      background-color: #f70909;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      padding: 5px 15px;
-      font-size: 16px;
-      font-weight: 500;
-      cursor: pointer;
-    }
   }
   .container {
     width: 100%;
@@ -42,38 +32,45 @@
     align-items: center;
     justify-content: center;
     color: white;
-    h1 {
-      font-size: 50px;
-    }
-    h2 {
-      margin: 20px;
-    }
-    p {
-      font-size: 20px;
-    }
-    .input {
-      background-color: white;
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 20px;
-      height: 50px;
+    font-family: roboto;
+
+    form {
+      width: 300px;
+      height: 300px;
+      padding: 30px;
       border-radius: 5px;
+      background-color: var(--main-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
       input {
-        flex: 9;
-        height: 100%;
-        border: none;
-        padding: 0 10px;
-      }
-      .registerButton {
-        flex: 3;
-        height: 100%;
-        border: none;
-        background-color: #f70909;
+        height: 40px;
+        border-radius: 5px;
+        background-color: gray;
         color: white;
-        font-size: 22px;
+        padding-left: 10px;
+
+        &::placeholder {
+          color: lightgray;
+        }
+      }
+      button {
+        height: 40px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
         cursor: pointer;
+      }
+
+      span {
+        color: lightgray;
+        b {
+          color: white;
+        }
       }
     }
   }

@@ -12,6 +12,7 @@ function Register() {
   };
   const handleFinish = () => {
     setPassword(passwordRef.current.value);
+    console.log(password);
   };
   return (
     <div className="register">
